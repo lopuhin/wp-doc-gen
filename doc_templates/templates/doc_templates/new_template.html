@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block extra_head %}
+<style>
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+form input {
+    float: right;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+
+<div class="content">
+
+    <p>Please share both documents with
+    <em>{{ share_email }}</em>
+    </p>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" name="submit" value="Preview">
+    </form>
+
+</div>
+
+{% endblock %}

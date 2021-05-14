@@ -1,0 +1,25 @@
+# docxtpl
+
+docxtpl==0.11.5
+Jinja2==3.0.0
+lxml==4.6.3
+MarkupSafe==2.0.0
+python-docx==0.8.10
+
+# google API
+
+google-api-core==1.26.3
+google-api-python-client==2.4.0
+google-auth==1.30.0
+google-auth-httplib2==0.1.0
+google-auth-oauthlib==0.4.4
+googleapis-common-protos==1.53.0
+httplib2==0.19.1
+idna==2.10
+oauthlib==3.1.0
+
+# django
+
+asgiref==3.3.4
+django==3.2.2
+sqlparse==0.4.1
