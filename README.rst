@@ -5,6 +5,11 @@ This uses `python-docx-template <https://docxtpl.readthedocs.io/>`_
 docx template engine (which is in turn based on Jinja2) to edit and preview
 templates in Google Docs.
 
+This is how it looks:
+
+.. image:: screenshot.png
+  :alt: Screenshot
+
 How to run
 ----------
 
