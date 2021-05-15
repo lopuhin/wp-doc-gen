@@ -88,8 +88,11 @@ def upload_docx(drive, doc_id: str, body: bytes):
 
 
 def refresh_target(request, template_id, preview_id):
-    render_target(template_id, preview_id)
     result = {}
+    try:
+        render_target(template_id, preview_id)
+    except Exception as e:
+        result['error'] = str(e)
     return JsonResponse(result)
 
 
